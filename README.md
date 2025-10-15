@@ -1,24 +1,13 @@
 # Personal AI Portfolio Website
 
-This is the personal portfolio of **Sudais Khalid**, showcasing AI / ML / deep learning projects, skills, and contact info.
+This is the personal portfolio website of **Muhammad Sudais Khalid**, an AI Engineer & ML Model Builder.
+It showcases projects, skills, and professional journey.
 
-## í²¼ Features
-- Home, About, Skills, Projects, Contact sections  
-- Blog / Newsletter link  
-- Privacy Policy & Terms of Service pages  
-- Clean, responsive design
-
-## í»  Tech Stack
+## íº€ Tech Stack
 - HTML, CSS, JavaScript  
-- (Optional) frameworks/libraries if any  
-- Responsive & semantic layout  
-
-## íº€ Deployment
-Hosted on GitHub Pages (or other)  
-Once pushed, enable **Pages** in repo settings â†’ Source:  branch, folder   
+- Responsive, clean design  
 
 ## í³« Contact
-msudaiskhalid.ai@gmail.com  
+Email: msudaiskhalid.ai@gmail.com  
 LinkedIn: [Sudais Khalid](https://linkedin.com/in/sudais-khalid)
 
-# Personal-AI-Portfolio-Website
