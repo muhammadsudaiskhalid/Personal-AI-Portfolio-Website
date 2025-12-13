@@ -1,0 +1,30 @@
+# Robots.txt for sudaiskhalid.com
+# AI Engineer Portfolio - Sudais Khalid
+
+User-agent: *
+Allow: /
+
+# Allow all major search engine crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Sitemap location
+Sitemap: https://sudaiskhalid.com/sitemap.xml
+
+# Host
+Host: https://sudaiskhalid.com
