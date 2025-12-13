@@ -120,6 +120,13 @@ ul, ol {
   text-align: center;
 }
 
+.loader-logo {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1.5rem;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
 .loader-spinner {
   width: 40px;
   height: 40px;
@@ -127,17 +134,12 @@ ul, ol {
   border-top-color: var(--primary);
   border-radius: 50%;
   animation: spin 1s linear infinite;
-  margin: 0 auto 1rem;
+  margin: 0 auto;
 }
 
-.loader-text {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(0.95); }
 }
 
 @keyframes spin {
@@ -320,12 +322,19 @@ nav a:not(.nav-cta):hover::after {
 }
 
 .nav-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   padding: 10px 20px;
   background: var(--primary);
   color: var(--text-primary) !important;
   border-radius: 8px;
   font-weight: 600;
   transition: var(--transition);
+}
+
+.nav-cta svg {
+  flex-shrink: 0;
 }
 
 .nav-cta:hover {
