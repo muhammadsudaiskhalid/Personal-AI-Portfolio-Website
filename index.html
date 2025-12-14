@@ -241,6 +241,13 @@
     <div class="particle"></div>
   </div>
 
+  <!-- Light Grid Background -->
+  <div class="light-grid">
+    <div class="grid-pattern"></div>
+    <div class="grid-glow"></div>
+  </div>
+  <div class="grid-glow-cursor" id="gridGlowCursor"></div>
+
   <!-- Navigation -->
   <header>
     <div class="logo">
@@ -281,6 +288,42 @@
         AI Engineer specializing in machine learning, deep learning, and production-ready
         intelligent solutions. I turn complex data into systems that drive measurable results.
       </p>
+      
+      <!-- VS Code Mini Terminal -->
+      <div class="hero-terminal">
+        <div class="terminal-header">
+          <div class="terminal-controls">
+            <span class="term-control close"></span>
+            <span class="term-control minimize"></span>
+            <span class="term-control maximize"></span>
+          </div>
+          <div class="terminal-title">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+            </svg>
+            Terminal
+          </div>
+          <div class="terminal-tabs">
+            <span class="tab-active">zsh</span>
+          </div>
+        </div>
+        <div class="terminal-body">
+          <div class="terminal-line">
+            <span class="prompt">❯</span>
+            <span class="command">python</span>
+            <span class="flag">-c</span>
+            <span class="string">"import sudais; sudais.hire()"</span>
+          </div>
+          <div class="terminal-line output">
+            <span class="success">✓</span> AI Engineer ready to build amazing solutions!
+          </div>
+          <div class="terminal-line">
+            <span class="prompt">❯</span>
+            <span class="cursor">|</span>
+          </div>
+        </div>
+      </div>
+
       <div class="hero-cta">
         <a href="#work" class="btn btn-primary">
           View My Work
@@ -463,17 +506,92 @@
         </div>
 
         <div class="why-visual">
-          <div class="tech-stack">
-            <div class="tech-item">Python</div>
-            <div class="tech-item">TensorFlow</div>
-            <div class="tech-item">PyTorch</div>
-            <div class="tech-item">Scikit-learn</div>
-            <div class="tech-item">Pandas</div>
-            <div class="tech-item">NumPy</div>
-            <div class="tech-item">Flask</div>
-            <div class="tech-item">Streamlit</div>
-            <div class="tech-item">Docker</div>
-            <div class="tech-item">Git</div>
+          <div class="vscode-window">
+            <div class="vscode-titlebar">
+              <div class="vscode-controls">
+                <span class="control close"></span>
+                <span class="control minimize"></span>
+                <span class="control maximize"></span>
+              </div>
+              <div class="vscode-tabs">
+                <div class="vscode-tab active">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="#3572A5">
+                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0z"/>
+                  </svg>
+                  sudais.py
+                </div>
+              </div>
+              <div class="vscode-actions">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 13H5v-2h14v2z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="vscode-content">
+              <div class="vscode-sidebar">
+                <div class="sidebar-icon active">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.5 0h-9L7 1.5V6H2.5L1 7.5v15.07L2.5 24h12.07L16 22.57V18h4.7l1.3-1.43V4.5L17.5 0zm0 2.12l2.38 2.38H17.5V2.12zm-3 20.38h-12v-15H7v9.07L8.5 18h6v4.5zm6-6h-12v-15H16v4.5h4.5v10.5z"/>
+                  </svg>
+                </div>
+                <div class="sidebar-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M15.25 0a8.25 8.25 0 0 0-6.18 13.72L1 22.88l1.12 1.12 8.05-9.12A8.251 8.251 0 1 0 15.25.01V0zm0 15a6.75 6.75 0 1 1 0-13.5 6.75 6.75 0 0 1 0 13.5z"/>
+                  </svg>
+                </div>
+                <div class="sidebar-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M21.007 8.222A3.738 3.738 0 0 0 15.045 5.2a3.737 3.737 0 0 0 1.156 6.583 2.988 2.988 0 0 1-2.668 1.67h-2.99a4.456 4.456 0 0 0-2.989 1.165V7.4a3.737 3.737 0 1 0-1.494 0v9.117a3.776 3.776 0 1 0 1.816.099 2.99 2.99 0 0 1 2.668-1.667h2.99a4.484 4.484 0 0 0 4.223-3.039 3.736 3.736 0 0 0 3.25-3.687zM4.565 3.738a2.242 2.242 0 1 1 4.484 0 2.242 2.242 0 0 1-4.484 0zm4.484 16.441a2.242 2.242 0 1 1-4.484 0 2.242 2.242 0 0 1 4.484 0zm8.221-9.715a2.242 2.242 0 1 1 0-4.485 2.242 2.242 0 0 1 0 4.485z"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="vscode-editor">
+                <div class="line-numbers">
+                  <span>1</span>
+                  <span>2</span>
+                  <span>3</span>
+                  <span>4</span>
+                  <span>5</span>
+                  <span>6</span>
+                  <span>7</span>
+                  <span>8</span>
+                  <span>9</span>
+                  <span>10</span>
+                  <span>11</span>
+                  <span>12</span>
+                  <span>13</span>
+                  <span>14</span>
+                  <span>15</span>
+                </div>
+                <div class="code-content">
+                  <pre><code><span class="keyword">class</span> <span class="class-name">AIEngineer</span>:
+    <span class="keyword">def</span> <span class="function">__init__</span>(<span class="param">self</span>):
+        <span class="param">self</span>.name = <span class="string">"Sudais Khalid"</span>
+        <span class="param">self</span>.role = <span class="string">"AI Engineer"</span>
+        <span class="param">self</span>.skills = [
+            <span class="string">"Python"</span>, <span class="string">"TensorFlow"</span>,
+            <span class="string">"PyTorch"</span>, <span class="string">"Scikit-learn"</span>,
+            <span class="string">"Flask"</span>, <span class="string">"Docker"</span>
+        ]
+
+    <span class="keyword">def</span> <span class="function">build</span>(<span class="param">self</span>, problem):
+        solution = <span class="param">self</span>.analyze(problem)
+        <span class="keyword">return</span> <span class="param">self</span>.deploy(solution)
+
+<span class="comment"># Ready to solve your AI challenges</span></code></pre>
+                </div>
+              </div>
+            </div>
+            <div class="vscode-statusbar">
+              <div class="status-left">
+                <span class="status-item"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M21.007 8.222A3.738 3.738 0 0 0 15.045 5.2a3.737 3.737 0 0 0 1.156 6.583 2.988 2.988 0 0 1-2.668 1.67h-2.99a4.456 4.456 0 0 0-2.989 1.165V7.4a3.737 3.737 0 1 0-1.494 0v9.117a3.776 3.776 0 1 0 1.816.099 2.99 2.99 0 0 1 2.668-1.667h2.99a4.484 4.484 0 0 0 4.223-3.039 3.736 3.736 0 0 0 3.25-3.687z"/></svg> main</span>
+              </div>
+              <div class="status-right">
+                <span class="status-item">Python</span>
+                <span class="status-item">UTF-8</span>
+                <span class="status-item">Ln 15, Col 1</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>

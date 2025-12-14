@@ -7,6 +7,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   initLoader();
   initCursor();
+  initGridGlow();
   initNavigation();
   initScrollAnimations();
   initScrollTop();
@@ -23,6 +24,31 @@ function initLoader() {
     setTimeout(() => {
       loader.classList.add('loaded');
     }, 800);
+  });
+}
+
+/* ============================================
+   GRID GLOW CURSOR EFFECT
+   ============================================ */
+function initGridGlow() {
+  const gridGlowCursor = document.getElementById('gridGlowCursor');
+  
+  if (!gridGlowCursor) return;
+  
+  // Check for touch device
+  if ('ontouchstart' in window) {
+    gridGlowCursor.style.display = 'none';
+    return;
+  }
+  
+  document.addEventListener('mousemove', (e) => {
+    gridGlowCursor.style.left = e.clientX + 'px';
+    gridGlowCursor.style.top = e.clientY + 'px';
+    gridGlowCursor.classList.add('active');
+  });
+
+  document.addEventListener('mouseleave', () => {
+    gridGlowCursor.classList.remove('active');
   });
 }
 
